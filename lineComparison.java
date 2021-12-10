@@ -18,11 +18,26 @@ public class lineComparison{
                 System.out.println("Enter value for y2: " );
                 Scanner s4 = new Scanner(System.in);
                 y2=s4.nextFloat();
+		int x3 = 3;
+		int y3 = 4;
+		int x4 = 5;
+		int y4 = 7; 
                 double d1 = (x2-x1);
                 double d2 = (y2-y1);
+		int d3 = (x4-x3);
+		int d4 = (y4-y3);
                 double square1 = Math.pow(d1,2);
                 double square2 = Math.pow(d2,2);
-                System.out.println("The Distanve between two lines :" + Math.sqrt(square1+square2));
+		double square3 = Math.pow(d3,2);
+		double square4 = Math.pow(d4,2);
+		double distance1 = Math.sqrt(square1+square2);
+		double distance2 = Math.sqrt(square3+square4);
+		if (distance1 == distance2)
+				System.out.println("Both lines are equal");
+		else
+				System.out.println("Lines are not equal");
+
+              //  System.out.println("The Distanve between two lines :" + Math.sqrt(square1+square2));
 
 
                 }
