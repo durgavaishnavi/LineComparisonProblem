@@ -24,8 +24,8 @@ public class lineComparison{
 		int y4 = 7; 
                 double d1 = (x2-x1);
                 double d2 = (y2-y1);
-		int d3 = (x4-x3);
-		int d4 = (y4-y3);
+		double d3 = (x4-x3);
+		double d4 = (y4-y3);
                 double square1 = Math.pow(d1,2);
                 double square2 = Math.pow(d2,2);
 		double square3 = Math.pow(d3,2);
@@ -34,11 +34,10 @@ public class lineComparison{
 		double distance2 = Math.sqrt(square3+square4);
 		if (distance1 == distance2)
 				System.out.println("Both lines are equal");
-		else
-				System.out.println("Lines are not equal");
-
-              //  System.out.println("The Distanve between two lines :" + Math.sqrt(square1+square2));
-
-
+		else if (distance1 > distance2)
+				System.out.println("Length of Line 1 is greater and Length of Line 2 is smaller");
+		else 
+				System.out.println("Length of Line 2 is greater and Length of Line 1 is smaller");
+	
                 }
 }
